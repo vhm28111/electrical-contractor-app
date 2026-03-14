@@ -1,0 +1,71 @@
+/* Page background */
+
+body{
+margin:0;
+padding:0;
+font-family:"Times New Roman", serif;
+background:#f2f2f2;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+
+/* Main container */
+
+.home{
+text-align:center;
+background:white;
+padding:40px;
+width:500px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+
+/* Company title */
+
+.home h1{
+color:#1b2f6b;
+margin-bottom:10px;
+}
+
+
+/* Address */
+
+.home p{
+font-size:16px;
+margin-bottom:30px;
+line-height:1.4;
+}
+
+
+/* Menu buttons */
+
+.menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+
+/* Buttons */
+
+.menu button{
+padding:12px;
+font-size:16px;
+border:none;
+background:#1b2f6b;
+color:white;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+}
+
+
+/* Button hover */
+
+.menu button:hover{
+background:#314a9b;
+}

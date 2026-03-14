@@ -1,0 +1,284 @@
+/* Page background */
+
+body{
+font-family:"Times New Roman", serif;
+background:#f2f2f2;
+margin:0;
+padding:0;
+}
+
+
+/* A4 container */
+
+.container{
+width:210mm;
+min-height:297mm;
+margin:auto;
+padding:12mm;
+background:white;
+box-sizing:border-box;
+}
+
+
+/* Header */
+
+.contractor-header{
+margin-bottom:10px;
+}
+
+.top-line{
+display:flex;
+justify-content:space-between;
+font-size:16px;
+font-weight:bold;
+color:#1b2f6b;
+margin-bottom:5px;
+}
+
+
+/* Company row */
+
+.company-row{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:100px;
+}
+
+
+/* Company title */
+
+.company-info h2{
+margin:0;
+font-size:22px;
+color:#1b2f6b;
+letter-spacing:1px;
+text-align:center;
+line-height:1.1;
+}
+
+.sub{
+font-style:italic;
+font-weight:bold;
+color:#1b2f6b;
+text-align:center;
+margin:2px 0;
+line-height:1.1;
+}
+
+.address{
+text-align:center;
+font-size:14px;
+margin:2px 0;
+line-height:1.2;
+}
+
+.contact{
+text-align:center;
+font-size:14px;
+margin:2px 0;
+line-height:1.2;
+}
+
+
+/* Blue line */
+
+.blue-line{
+height:3px;
+background:#1b2f6b;
+margin-top:8px;
+}
+
+
+/* Title */
+
+.title{
+text-align:center;
+letter-spacing:2px;
+margin:10px 0;
+}
+
+
+/* Details row */
+
+.details{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+}
+
+
+/* Small input fields */
+
+.small-input{
+border:none;
+border-bottom:1px solid black;
+outline:none;
+width:110px;
+font-size:13px;
+background:transparent;
+}
+
+
+/* Textarea */
+
+textarea{
+border:none;
+border-bottom:1px solid black;
+width:100%;
+resize:none;
+font-family:inherit;
+font-size:13px;
+padding:2px;
+background:transparent;
+}
+
+
+/* Table */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:6px;
+}
+
+table, th, td{
+border:1px solid black;
+}
+
+th, td{
+padding:4px;
+font-size:13px;
+vertical-align:top;
+}
+
+
+/* Column widths */
+
+th:nth-child(1){width:8%;}
+th:nth-child(2){width:50%;}
+th:nth-child(3){width:12%;}
+th:nth-child(4){width:15%;}
+th:nth-child(5){width:15%;}
+
+
+/* Description box */
+
+.desc{
+width:100%;
+border:none;
+outline:none;
+resize:none;
+font-family:inherit;
+font-size:13px;
+line-height:1.2;
+min-height:16px;
+max-height:40px;
+overflow:hidden;
+white-space:pre-wrap;
+word-wrap:break-word;
+background:transparent;
+}
+
+
+/* Number inputs */
+
+td input{
+width:100%;
+border:none;
+outline:none;
+text-align:center;
+background:transparent;
+font-size:13px;
+}
+
+
+/* Totals section */
+
+.totals{
+text-align:right;
+margin-top:10px;
+font-size:14px;
+}
+
+
+/* Total boxes */
+
+.total-box{
+width:120px;
+border:1px solid black;
+padding:4px;
+text-align:right;
+font-size:14px;
+background:#f9f9f9;
+}
+
+.grand-box{
+font-weight:bold;
+font-size:16px;
+background:#eaeaea;
+}
+
+
+/* Signature area */
+
+.signature{
+text-align:right;
+margin-top:35px;
+}
+
+
+/* Buttons */
+
+.buttons{
+text-align:center;
+margin-top:15px;
+}
+
+button{
+padding:6px 16px;
+font-size:14px;
+cursor:pointer;
+margin:5px;
+border:none;
+background:#1b2f6b;
+color:white;
+border-radius:3px;
+}
+
+button:hover{
+background:#314a9b;
+}
+
+
+/* Add Item button */
+
+button.add{
+background:#2e7d32;
+}
+
+button.add:hover{
+background:#1b5e20;
+}
+
+
+/* Print settings */
+
+@media print{
+
+.buttons{
+display:none;
+}
+
+body{
+background:white;
+}
+
+.container{
+padding:10mm;
+}
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Invoice</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Contractor Header -->
+
+<div class="contractor-header">
+
+<div class="top-line">
+<div class="left">H. Mahesh</div>
+<div class="right">GSTIN : 29ACBPH2376K1ZF</div>
+</div>
+
+<div class="company-row">
+
+<div class="logo-area">
+<img src="logo.png" class="logo">
+</div>
+
+<div class="company-info">
+
+<h2>M/s. SREE VEERABHADRESWAR ELECTRICALS</h2>
+
+<p class="sub">
+Govt. Licenced Class-I Electrical Contractor
+</p>
+
+<p class="address">
+“Sree Veerabhadreshwara Nilaya, 14th Ward, Ashok Colony,<br>
+SANDUR – 583119, Ballari Dist., Karnataka”
+</p>
+
+<p class="contact">
+Cell : 94807 23472 / 81529 53314 &nbsp;&nbsp;
+e-mail : maheshsve2008@gmail.com
+</p>
+
+</div>
+</div>
+
+<div class="blue-line"></div>
+
+</div>
+
+<h2 class="title">INVOICE / BILL</h2>
+
+<div class="details">
+<div>
+<label>Bill No :</label>
+<input type="text" class="small-input">
+</div>
+
+<div>
+<label>Date :</label>
+<input type="date" class="small-input">
+</div>
+</div>
+
+<h3> To:</h3>
+<textarea rows="2"></textarea>
+
+<table id="quotationTable">
+<thead>
+<tr>
+<th>Sl No</th>
+<th>Description</th>
+<th>Qty</th>
+<th>Rate</th>
+<th>Amount</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td><textarea class="desc" rows="1"></textarea></td>
+<td><input type="number" oninput="calculateRow(this)"></td>
+<td><input type="number" oninput="calculateRow(this)"></td>
+<td class="amount">0</td>
+</tr>
+</tbody>
+</table>
+
+<button onclick="addRow()">Add Item</button>
+
+<div class="totals">
+<p>Subtotal ₹ <span id="subtotal">0</span></p>
+<p>GST (18%) ₹ <span id="gst">0</span></p>
+<h3>Total ₹ <span id="grandTotal">0</span></h3>
+<p id="amountWords">Amount in Words: Zero Only</p>
+</div>
+<div class="buttons">
+
+<button onclick="saveData()">Save</button>
+
+<button onclick="printPage()">Print</button>
+
+<button onclick="downloadPDF()">Download PDF</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</div>
+
+</body>
+</html>
